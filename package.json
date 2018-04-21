@@ -1,0 +1,7 @@
+{
+    "name": "node-parallel",
+    "version": "1.0.0",
+    "dependencies": {
+        "puppeteer": "^1.1.1"
+    }
+}
