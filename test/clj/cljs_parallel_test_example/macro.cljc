@@ -1,4 +1,4 @@
-(ns cljs-parallel-test-example.ns-split
+(ns cljs-parallel-test-example.macro
   (:require [cljs.analyzer.api :as ana-api]
             [cljs.analyzer :as ana]
             [cljs.test :refer-macros [run-tests-block test-ns-block]]))
@@ -17,6 +17,14 @@
 (defmacro gen-ns-test-calls []
   (let [nspaces (get-testable-nss)]
     `[~@(for [nspace nspaces]
-          `(cljs.test/test-ns-block (cljs.test/get-current-env) (quote ~nspace)))]))
+
+;just notes here
+          
+
+          `(cljs.test/test-ns-block
+            (update (cljs.test/get-current-env)
+                      :testing-contexts
+                      #(conj % (str (quote ~nspace))))
+            (quote ~nspace)))]))
 
 

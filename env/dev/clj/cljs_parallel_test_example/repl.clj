@@ -1,5 +1,5 @@
-(ns test-namespaces.repl
-  (:use test-namespaces.handler
+(ns cljs-parallel-test-example.repl
+  (:use cljs-parallel-test-example.handler
         figwheel-sidecar.repl-api
         ring.server.standalone
         [ring.middleware file-info file]))

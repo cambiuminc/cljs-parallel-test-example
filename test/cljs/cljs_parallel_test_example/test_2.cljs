@@ -3,5 +3,5 @@
    [cljs.test :refer-macros [deftest is]]))
 
 
-(deftest ident
+(deftest ident-2
   (is (= 2 2)))

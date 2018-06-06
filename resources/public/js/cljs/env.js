@@ -3,8 +3,8 @@ goog.provide('cljs.env');
 goog.require('cljs.core');
 cljs.env._STAR_compiler_STAR_ = null;
 cljs.env.default_compiler_env = (function cljs$env$default_compiler_env(var_args){
-var G__15643 = arguments.length;
-switch (G__15643) {
+var G__15327 = arguments.length;
+switch (G__15327) {
 case 0:
 return cljs.env.default_compiler_env.cljs$core$IFn$_invoke$arity$0();
 

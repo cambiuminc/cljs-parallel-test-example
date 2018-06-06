@@ -1,6 +1,8 @@
 /target
 /classes
 /checkouts
+/resources/public/js
+/node_modules
 profiles.clj
 pom.xml
 pom.xml.asc
@@ -15,3 +17,5 @@ pom.xml.asc
 /.sass-cache
 *~
 \#*#
+
+system.properties

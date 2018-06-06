@@ -1,6 +1,6 @@
 (ns cljs-parallel-test-example.runner
   (:require
-   [cljs-parallel-test-example.ns-split :refer-macros [gen-ns-test-calls]]
+   [cljs-parallel-test-example.macro :refer-macros [gen-ns-test-calls]]
    [cljs.test :refer [run-block empty-env get-current-env set-env!] :refer-macros [test-ns-block]]
    [cljs.analyzer.api :as ana-api]
    [cljs-parallel-test-example.sample]

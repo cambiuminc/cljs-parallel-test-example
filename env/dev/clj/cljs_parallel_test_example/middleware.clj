@@ -1,4 +1,4 @@
-(ns test-namespaces.middleware
+(ns cljs-parallel-test-example.middleware
   (:require [ring.middleware.defaults :refer [site-defaults wrap-defaults]]
             [prone.middleware :refer [wrap-exceptions]]
             [ring.middleware.reload :refer [wrap-reload]]))
